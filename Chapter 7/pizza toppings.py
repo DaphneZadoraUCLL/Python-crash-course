@@ -1,10 +1,12 @@
-active = True
-
-while active:
-    topping = input(
-        "Please enter the topping you would like (or type 'quit' to finish): ")
-    if topping.lower() == 'quit':
-        active = False
+message = "Welcome, please add your wanted topping (or type quit to finish): "
+toppings = []
+while True:
+    topping = input(message)
+    if topping.lower() == "quit":
+        toppings_string = ", ".join(toppings) if toppings else "no toppings"
+        print(
+            f"Preparing your pizza with the following toppings: {toppings_string}")
+        break
     else:
         print(f"Adding {topping} to your pizza.")
-print("Your pizza is being prepared with the selected toppings.")
+        toppings.append(topping)
