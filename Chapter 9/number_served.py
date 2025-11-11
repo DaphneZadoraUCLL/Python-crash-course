@@ -24,17 +24,10 @@ class Restaurant:
         self.number_served += n
 
 
-class IceCreamStand(Restaurant):
-    """A class representing an ice cream stand."""
-
-    def __init__(self, restaurant_name, cuisine_type='Ice Cream'):
-        """ Initialize attributes of the parent class.
-            Then initialize attributes specific to an ice cream stand.
-        """
-        super().__init__(restaurant_name, cuisine_type)
-        self.flavors = []
-
-    def display_flavors(self):
-        """Display available ice cream flavors."""
-        for flavor in self.flavors:
-            print(f"- {flavor}")
+restaurant = Restaurant('Panda wok', 'Chinese')
+restaurant.set_number_served(3)
+print(f"Number of customers served: {restaurant.number_served}")
+restaurant.set_number_served(4)
+print(f"Number of customers served: {restaurant.number_served}")
+restaurant.increment_number_served(5)
+print(f"Number of customers served: {restaurant.number_served}")

@@ -25,7 +25,3 @@ while True:
     else:
         album = make_album(artist, title, tracks)
     print(album)
-
-album1 = make_album('Adele', '25', '11')
-album2 = make_album('Drake', 'Scorpion', number_of_tracks='16')
-album3 = make_album('Beyoncé', 'Lemonade')
