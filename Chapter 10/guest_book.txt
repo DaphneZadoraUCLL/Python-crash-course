@@ -1,0 +1,8 @@
+Sam
+Daphne
+Sam
+Aiden
+Nancy
+Tom
+& "C:/Users/Daphne Zadora/AppData/Local/Programs/Python/Python313/python.exe" "c:/Users/Daphne Zadora/Desktop/python_work/Chapter 10/addition.py"
+clear
